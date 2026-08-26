@@ -1,0 +1,242 @@
+/* =========================
+   1画面完結
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #080807;
+}
+
+body {
+  overflow: hidden;
+}
+
+
+/* 全体 */
+
+.site {
+  width: 100%;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* =========================
+   ターンテーブル部分
+========================= */
+
+.turntable {
+  position: relative;
+
+  width: 100%;
+
+  /* SNS部分を除いた残り */
+  height: calc(100vh - 190px);
+
+  min-height: 0;
+
+  overflow: hidden;
+
+  background: #111;
+}
+
+
+/* ターンテーブル画像 */
+
+.turntable-base {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+/* =========================
+   SNS
+========================= */
+
+.socials {
+
+  width: 100%;
+
+  height: 190px;
+
+  flex-shrink: 0;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, 1fr);
+
+  gap: 12px;
+
+  padding: 18px;
+
+  background: #11100e;
+
+  border-top: 1px solid #4d4538;
+}
+
+
+/* SNSカード */
+
+.socials a {
+
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  border: 1px solid #554c3c;
+
+  border-radius: 12px;
+
+  color: #e8dcc2;
+
+  text-decoration: none;
+
+  background: rgba(10, 9, 8, .6);
+
+  transition:
+    background .2s,
+    transform .2s;
+}
+
+
+.socials a:hover {
+
+  background: #211f1a;
+
+  transform: translateY(-3px);
+
+}
+
+
+/* アイコン */
+
+.social-icon {
+
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 8px;
+
+  font-size: 36px;
+
+  color: #e8dcc2;
+}
+
+
+/* SNS名 */
+
+.socials span {
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  white-space: nowrap;
+}
+
+
+/* =========================
+   フッター
+========================= */
+
+/* 今回は一画面なので隠す */
+
+footer {
+  display: none;
+}
+
+
+/* =========================
+   スマホ
+========================= */
+
+@media (max-width: 600px) {
+
+  .site {
+    height: 100dvh;
+  }
+
+
+  /* ターンテーブル */
+
+  .turntable {
+
+    height: calc(100dvh - 150px);
+
+  }
+
+
+  /* SNS */
+
+  .socials {
+
+    height: 150px;
+
+    padding: 10px;
+
+    gap: 8px;
+
+    grid-template-columns:
+      repeat(3, 1fr);
+
+  }
+
+
+  .socials a {
+
+    min-height: 60px;
+
+    border-radius: 9px;
+
+  }
+
+
+  .social-icon {
+
+    height: 28px;
+
+    margin-bottom: 3px;
+
+    font-size: 25px;
+
+  }
+
+
+  .socials span {
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+
+  }
+
+}

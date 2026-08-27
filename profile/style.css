@@ -209,58 +209,33 @@ body {
     height: 100dvh;
   }
 
-
   /* ターンテーブル */
-
   .turntable {
-
-    height: calc(100dvh - 150px);
-
+    height: calc(100dvh - 250px);
   }
-
 
   /* SNS */
-
   .socials {
-
-    height: 150px;
-
-    padding: 10px;
-
-    gap: 8px;
-
-    grid-template-columns:
-      repeat(3, 1fr);
-
+    height: 250px;
+    padding: 14px;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
   }
-
 
   .socials a {
-
-    min-height: 60px;
-
-    border-radius: 9px;
-
+    min-height: 75px;
+    border-radius: 11px;
   }
-
 
   .social-icon {
-
-    height: 28px;
-
-    margin-bottom: 3px;
-
-    font-size: 25px;
-
+    height: 34px;
+    margin-bottom: 5px;
+    font-size: 30px;
   }
 
-
   .socials span {
-
-    font-size: 8px;
-
+    font-size: 10px;
     letter-spacing: 1px;
-
   }
 
 }

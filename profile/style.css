@@ -238,4 +238,35 @@ body {
     letter-spacing: 1px;
   }
 
+  /* iPhone SEなど小さいスマホ用 */
+@media (max-width: 375px) {
+
+  .turntable {
+    height: calc(100dvh - 150px);
+  }
+
+  .socials {
+    height: 150px;
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .socials a {
+    min-height: 60px;
+    border-radius: 9px;
+  }
+
+  .social-icon {
+    height: 28px;
+    margin-bottom: 3px;
+    font-size: 25px;
+  }
+
+  .socials span {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+}
+
 }
